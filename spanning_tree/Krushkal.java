@@ -32,6 +32,7 @@ class Edge implements Comparable<Edge> {
 }
 
 /*
+* It is a greedy algorithm.
 * Time Complexity of Krushkal's Algorithm
 * O(ElogE) is definitely O(ElogV) because E <= V^2 (fully connected graph)
 * ElogE <= Elog(V^2) = 2ElogV = O(ElogV)
