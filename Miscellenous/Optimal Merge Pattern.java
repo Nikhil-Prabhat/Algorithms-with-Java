@@ -30,7 +30,7 @@ public class OptimalMergePattern {
 
         int totalCount = 0;
 
-        // Pop minimum two elements and add the cost obtaine to the heap again
+        // Pop minimum two elements and add the cost obtained to the heap again
         while (minHeap.size() > 1) {
             int tempCost = minHeap.poll() + minHeap.poll();
             totalCount += tempCost;
