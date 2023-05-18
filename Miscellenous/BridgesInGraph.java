@@ -6,6 +6,7 @@ import java.util.List;
 *  A bridge in a graph is an edge between two vertices which if removed, can result in multiple components in the graph
 *  dfsTimeInsertion : DFS insertion time while traversing
 *  lowestTimeInsertion : Minimum lowest time insertion of all adjacent nodes apart from parent
+*  An articulation node is a node which if deleted, can result in multiple components in the graph
 * */
 public class BridgesInGraph {
 
