@@ -7,6 +7,7 @@ import java.util.List;
 *  dfsTimeInsertion : DFS insertion time while traversing
 *  lowestTimeInsertion : Minimum lowest time insertion of all adjacent nodes apart from parent
 *  An articulation node is a node which if deleted, can result in multiple components in the graph
+*  Youtube Link to understand bridge : https://www.youtube.com/watch?v=qrAub5z8FeA
 * */
 public class BridgesInGraph {
 
