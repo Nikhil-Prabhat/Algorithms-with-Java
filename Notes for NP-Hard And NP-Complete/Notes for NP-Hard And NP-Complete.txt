@@ -1,0 +1,49 @@
+********************** NP Hard And NP Complete Discussion ************************
+
+Polynomial Time Algorithms :
+	Binary Search		  - log n
+	Linear Search		  - n
+	Insertion Sort		  - n^2
+	Merge Sort 			  - n logn
+	Matrix Multiplication - n^3
+	
+Exponential Time Algorithms :
+	0/1 Knapsack		  - 2^n
+	Traveling SP		  - 2^n
+	Sum of Subsets		  - 2^n
+	Graph Coloring		  - 2^n
+	Hamiltonian Cycle	  - 2^n
+	
+NP Hard And NP Complete is a set of guidelines or framework which is used to solve an exponential time problems to polynomial time problems.
+
+Two important points are as follows :
+1. When we are not able to write polynomial time deterministic algorithms for a problem, we should try to write polynomial time non-deterministic algorithms for it.
+
+	There are two types of algorithms.
+
+	1. Deterministic Algorithms : These are those type of algoritms for which we know each and every step clearly.
+	2. Non-deterministic Algorithms : These are those algorithms for which, for every step we are not sure, how it is working. It is a combination of deterministic  and non-deterministic steps. Non-deterministic steps are written in the hope, that someday, we will crack it in the near future and the non-deterministic steps are always considered to be O(1).
+
+
+	Algorithm : NSearch(A, n , key) {
+		j = choice();			- Non-deterministic : O(1)
+		if (key == A[j]) {
+			write(j);
+			success();			- Non-deterministic	: O(1)
+		}
+		
+		write(0);
+		failure();				- Non-deterministic : O(1)
+				
+	}
+
+	Classes :
+
+	1. P 	- Set of Deterministic Algorithms with polynomial time solutions i.e Linear Search , Binary Search
+	2. NP	- Set of non-deterministic algorithms with polynomial time solutions. It means currently we don't know it but in the near future, we'll know this. Ex - 	    All  exponential time algorithms mentioned above .
+
+2. When we are unable to find the solution for the exponential problems in polynomial time, then, at least , we should try to find the similarity between all the  exponentials problems such that if one problem is solved, all other problem is solved.
+
+The base problem is satisfiablity problem. Plz find the picture attached in the repository.
+
+# NOTE : NP Hard Problems are those problems for which we want to have a polynomial time solutions but we don't even have any non-deterministic solutions for it.
