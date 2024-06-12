@@ -12,6 +12,10 @@ import java.util.Arrays;
 
 public class KMP_Algorithm {
 
+    // Test Case 
+    //ababcabcabababd
+    //ababd
+
     public static void main(String[] args) {
 
         String pattern = "abcabcd";
