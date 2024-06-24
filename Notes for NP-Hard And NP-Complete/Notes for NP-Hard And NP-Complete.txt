@@ -47,3 +47,36 @@ Two important points are as follows :
 The base problem is satisfiablity problem. Plz find the picture attached in the repository.
 
 # NOTE : NP Hard Problems are those problems for which we want to have a polynomial time solutions but we don't even have any non-deterministic solutions for it.
+
+## Updated Notes
+
+P (Polynomial Time)
+P is a class of problems that can be solved quickly by a computer.
+"Quickly" means that the time it takes to solve these problems grows at a manageable rate (polynomial rate) as the size of the problem increases.
+Example: Imagine you have a list of names and you want to find a specific name. A computer can do this efficiently by checking each name one by one. Even if the list is very long, the time it takes to find the name doesn't grow too fast.
+NP (Nondeterministic Polynomial Time)
+NP is a class of problems where if you are given a potential solution, you can check quickly whether it is correct.
+Finding the solution might be hard and take a long time, but checking if a given solution is correct is quick.
+Example: Imagine you have a puzzle, and you don't know how to solve it. Someone gives you a completed puzzle (a solution), and you can quickly see that the pieces fit perfectly. Finding the solution from scratch might take a lot of trial and error, but verifying it is easy.
+Comparing P and NP
+P problems: Can be both solved and checked quickly.
+Example: Adding two numbers together is a P problem because you can do it quickly and check the result quickly.
+NP problems: May be hard to solve quickly, but any proposed solution can be checked quickly.
+Example: Solving a Sudoku puzzle is an NP problem. Finding the solution might take a long time, but once you have a completed puzzle, checking if it's correct is quick.
+
+
+To understand the difference between NP-hard and NP-complete problems, it's important to first understand some concepts from computational complexity theory:
+
+P (Polynomial time): This class includes decision problems (problems with yes/no answers) that can be solved by a deterministic Turing machine in polynomial time.
+
+NP (Nondeterministic Polynomial time): This class includes decision problems for which a given solution can be verified in polynomial time by a deterministic Turing machine.
+
+NP-Hard Problems
+Definition: A problem is NP-hard if every problem in NP can be reduced to it in polynomial time. This means that if you could solve an NP-hard problem in polynomial time, you could solve all NP problems in polynomial time.
+Characteristics:
+NP-hard problems are at least as hard as the hardest problems in NP.
+NP-hard problems do not have to be in NP, meaning they do not have to be decision problems, and even if they are, they do not have to have solutions that can be verified in polynomial time.
+NP-Complete Problems
+Definition: A problem is NP-complete if it satisfies two conditions:
+It is in NP.
+It is NP-hard.
