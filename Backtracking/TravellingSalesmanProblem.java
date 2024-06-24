@@ -5,6 +5,8 @@ import java.util.List;
 
 /*
  * Travel all the cities with minimum distance and return back to the starting city
+ * We need to check for the optimized Hamiltonian Cycle
+ * Hamiltonian Cycle : Hamiltonian Cycle or Circuit in a graph G is a cycle that visits every vertex of G exactly once and returns to the starting vertex.
  * */
 public class TravellingSalesmanProblem {
 
